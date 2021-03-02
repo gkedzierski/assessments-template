@@ -1,4 +1,4 @@
-import { LatitudeLongitude } from '../types/latitude-longitured';
+import { LatitudeLongitude } from '../types/latitude-longitude';
 import { Currency } from './currency';
 import { Language } from './language';
 import { RegionalBlock } from './regional-block';
