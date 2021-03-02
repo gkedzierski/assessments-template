@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
+import RefreshIcon from '../components/atoms/RefreshIcon';
 import ErrorMessage from '../components/organisms/ErrorMessage';
 import LoadingIndicator from '../components/organisms/LoadingIndicator';
 import useFetchCountry from '../hooks/use-fetch-country';
@@ -39,7 +40,7 @@ const ViewCountry: React.FC = () => {
     <div>
       <div className="p-4 flex items-center justify-between border-b border-gray-200">
         <h1 className="text-lg leading-6 font-medium text-gray-700">
-          {loading || !data ? <div>Loading...</div> : data.name}
+          {loading || !data ? <RefreshIcon className="w-auto h-4 animate-spin" /> : data.name}
         </h1>
         <Link
           to="/"
